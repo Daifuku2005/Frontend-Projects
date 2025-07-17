@@ -1,0 +1,85 @@
+.changelog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 40rem;
+    max-height: 50rem;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;     
+}
+
+.changelog-title {
+    padding: 20px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.timeline::before{
+    content: '';
+    position: absolute;
+    left: 126px;
+    top: -20px;
+    bottom: -20px;
+    width: 3px;
+    background-color: #333;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    position: relative;
+}
+
+.timeline-date {
+    width: 100px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.timeline-marker {
+    width: 14px;
+    height: 14px;
+    background-color: #333;
+    border-radius: 50%;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.timeline-content {
+    text-align: left;
+}
+
+.button{
+    display: inline-block;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px 20px;
+    width: 13.5em;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.button:hover {
+    background-color: hsl(0, 0%, 33%);
+}
